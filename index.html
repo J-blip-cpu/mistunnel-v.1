@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mistunnel v.1</title>
+  
+  <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsbD0iI0IxQzFFRiIvPgogIDxsaW5lIHgxPSIxNiIgeTE9IjUiIHgyPSIxNiIgeTI9IjU5IiBzdHJva2U9IiMyMEYzRkYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTMyIDU5IDE2IDUgNDggNTkiIHN0cm9rZT0iIzIzRkYzMyIgc3Ryb2tlLXdpZHRoPSI2IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPg==" />
+  
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <input type="url" value="https://google.com" />
+  <button id="buypassBtn">
+    <span style="font-size: 80px">The Mistunnel</span><br />
+    <span style="font-size: 20px">By Bypassi</span>
+  </button>
+  <p>Click the button! This will only bypass certain Chrome extensions.</p>
+  <p>
+    You can read more about this exploit on
+    <a href="https://github.com/bypassiwastaken/buypass">its GitHub page</a>.
+  </p>
+
+  <button id="settingsToggle" style="margin-top: 30px; padding: 10px 20px; font-size: 18px;">Settings ⚙️</button>
+  
+  <div id="settingsPanel" style="display:none; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; text-align:left; background: rgba(255 255 255 / 0.1); padding: 20px; border-radius: 10px;">
+    <h2>Settings</h2>
+    
+    <label>
+      Cloak Mode (Blank Page): 
+      <input type="checkbox" id="cloakToggle" />
+    </label>
+    <br /><br />
+    
+    <label>
+      Choose Icon Color Gradient:
+      <select id="iconColorSelect">
+        <option value="greenBlue" selected>Green Top - Blue Bottom</option>
+        <option value="blueGreen">Blue Top - Green Bottom</option>
+        <option value="redBlack">Red Top - Black Bottom</option>
+      </select>
+    </label>
+    <br /><br />
+    
+    <button id="resetBtn" style="background-color: var(--red); color: white;">Reset Site</button>
+  </div>
+
+  <div class="credit">
+    <p>
+      <a href="https://github.com/S-PScripts/buypass">S-PScripts/buypass</a> 
+      (remixed <a href="https://github.com/reactor-coding/buypass">reactor-coding/buypass</a>)
+      (remixed <a href="https://github.com/bypassiwastaken/buypass">bypassiwastaken/buypass</a>)
+    </p>
+  </div>
+</body>
+</html>
